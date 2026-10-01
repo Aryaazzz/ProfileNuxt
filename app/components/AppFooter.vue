@@ -4,7 +4,9 @@
       <div class="footer-top">
         <div class="footer-brand-col">
           <div class="footer-logo">
-            <i class="fas fa-shapes footer-brand-icon"></i>
+            <div class="footer-logo-box">
+              <img src="/logo.png" alt="Logo Kelompok 3" class="footer-brand-img" />
+            </div>
             <span class="footer-brand-name">Kelompok 3</span>
           </div>
           <p class="footer-tagline">
@@ -110,9 +112,23 @@ const currentYear = new Date().getFullYear()
   gap: 10px;
 }
 
-.footer-brand-icon {
-  font-size: 1.25rem;
-  color: var(--primary-blue) !important;
+.footer-logo-box {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  background-color: #ffffff;
+  border: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  overflow: hidden;
+}
+
+.footer-brand-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .footer-brand-name {

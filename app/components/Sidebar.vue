@@ -3,7 +3,7 @@
     <!-- Header Brand -->
     <div class="sidebar-brand">
       <div class="brand-logo">
-        <i class="fas fa-shapes brand-icon"></i>
+        <img src="/logo.png" alt="Logo Kelompok 3" class="brand-logo-img" />
       </div>
       <div class="brand-info">
         <span class="brand-title">Kelompok 3</span>
@@ -155,19 +155,25 @@ const closeMobileMenu = () => {
 }
 
 .brand-logo {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: var(--radius-md);
-  background-color: var(--primary-blue-light);
-  border: 1px solid var(--primary-blue-subtle);
+  background-color: #ffffff;
+  border: 1px solid var(--border-light);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05);
+  flex-shrink: 0;
 }
 
-.brand-icon {
-  font-size: 1.15rem;
-  color: var(--primary-blue) !important;
+.brand-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: scale(1.15);
 }
 
 .brand-info {
